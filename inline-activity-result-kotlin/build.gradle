@@ -27,7 +27,7 @@ dependencies {
 ext {
     bintrayRepo = 'maven'
     bintrayName = rootProject.ext.libraryName+'-kotlin'
-    orgName = 'florent37'
+    orgName = 'ElParking'
 
     publishedGroupId = rootProject.ext.libraryGroup
     libraryName = rootProject.ext.libraryDescription+' Kotlin'
@@ -40,9 +40,9 @@ ext {
 
     libraryVersion = rootProject.ext.libraryVersion
 
-    developerId = 'florent37'
-    developerName = 'Florent Champigny'
-    developerEmail = 'champigny.florent@gmail.com'
+    developerId = 'ElParking'
+    developerName = 'ElParking'
+    developerEmail = 'devops@elparking.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
