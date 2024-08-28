@@ -7,9 +7,14 @@ buildscript {
     ext.rxjava = '2.2.19'
 
     repositories {
-        google()
         jcenter()
+        google()
         mavenCentral()
+        maven { url "https://jitpack.io"  }
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+        maven { url "https://repo.grails.org/grails/core/" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.3'
@@ -21,9 +26,14 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
         jcenter()
+        google()
         mavenCentral()
+        maven { url "https://jitpack.io"  }
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+        maven { url "https://repo.grails.org/grails/core/" }
     }
 }
 
@@ -35,9 +45,9 @@ ext {
     targetCompatibilityVersion = JavaVersion.VERSION_1_8
     androidXFragments = "1.2.4"
 
-    github = 'https://github.com/florent37/InlineActivityResult'
+    github = 'https://github.com/ElParking/InlineActivityResult'
 
-    libraryGroup = 'com.github.florent37'
+    libraryGroup = 'com.github.ElParking'
     libraryName = 'inline-activity-result'
     libraryVersion = "1.0.4"
     libraryDescription = 'Inline Activity Result'
